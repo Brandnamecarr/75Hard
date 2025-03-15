@@ -1,0 +1,12 @@
+{
+    "postgres": {
+        "user": "postgres",
+        "pass": "admin",
+        "table": "SeventyFiveHard",
+        "ip": "localhost",
+        "port": 5432
+    },
+    "query_file": {
+        "file_location": "./configs/queries.xml"
+    }
+}

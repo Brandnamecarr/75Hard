@@ -1,0 +1,20 @@
+<queries>
+    <query name="User::Create">
+        <sql>INSERT INTO Users (uuid, email, password) VALUES (%s, %s, %s) RETURNING uuid;</sql>
+    </query>
+    <query name="User::Auth">
+        <sql> SELECT uuid, email, password from Users WHERE email = %s; </sql>
+    </query>
+    <query name="User::Select">
+        <sql> SELECT * FROM Users; </sql>
+    </query>
+    <query name="User::Delete">
+        <sql> DELETE FROM Users WHERE email = %s RETURNING uuid; </sql>
+    </query>
+    <query name="User::SelectByUUID">
+        <sql> SELECT email, password FROM Users WHERE uuid = %s; </sql>
+    </query>
+    <query name="User::UpdatePostgres">
+        <sql> UPDATE Users SET email = %(email)s, password = %(password)s WHERE uuid = %(uuid)s RETURNING uuid; </sql>
+    </query>
+</queries>

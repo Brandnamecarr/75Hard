@@ -1,0 +1,14 @@
+{
+    "_comments": "this uuid is just to store locally, won't be in regular account_config files",
+    "test_uuid": "d66a2767-9899-4a5f-b444-213cbd535c36",
+    "ip": "localhost",
+    "challenges_completed": 1,
+    "preferences": [
+        {
+            "not_yet_implemented": true
+        },
+        {
+            
+        }
+    ]
+}
